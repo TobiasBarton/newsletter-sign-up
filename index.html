@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/stylesheet/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <div id="main-container">
+    <div id="text-container">
+      <div id="title-container">
+        <h1 id="title">Stay updated!</h1>
+      </div>
+      <div id="product-features">
+        <div id="sub-title-container">
+          <p id="sub-title">Join 60,000+ product managers receiving monthly updates on:</p>
+        </div>
+        <div id="feature-list">
+          <ul>
+            <li>
+              <div class="list-tick">
+                <img id="list-tick-img" src="./assets/images/icon-list.svg" alt="list-tick">
+              </div>
+              <div class="list-text">
+                <p>
+                  Product discovery and building what matters
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="list-tick">
+                <img id="list-tick-img" src="./assets/images/icon-list.svg" alt="list-tick">
+              </div>
+              <div class="list-text">
+                <p>
+                  Measuring to ensure updates are a success
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="list-tick">
+                <img id="list-tick-img" src="./assets/images/icon-list.svg" alt="list-tick">
+              </div>
+              <div class="list-text">
+                <p>
+                  And much more!
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="email-form-container">
+        <form id="email-form">
+          <label id="email-form-label" for="email-address">Email address</label>
+          <div id="email-text-container">
+            <input type="text" id="email-address" name="email-address" value="email@company.com">
+          </div>
+          <input id="subscribe-btn" type="submit" value="Subscribe to monthly newsletter">
+        </form>
+      </div>
+    </div>
+    <div id="img-container">
+      <img id="desktop-img" src="./assets/images/illustration-sign-up-desktop.svg" alt="newsletter">
+      <img id="mobile-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="newsletter">
+    </div>
+  </div>
+</body>
+</html>
