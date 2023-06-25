@@ -18,8 +18,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/TobiasBarton/newsletter-sign-up)
+- Live Site URL: [Add live site URL here](https://tobiasbarton.github.io/newsletter-sign-up/)
 
 ## My process
 
