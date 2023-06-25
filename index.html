@@ -11,45 +11,47 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <script src="main.js"></script>
 </head>
+
 <body>
   <div id="main-container">
     <div id="text-container">
       <div id="title-container">
-        <h1 id="title">Stay updated!</h1>
+        <h2 id="title">Stay updated!</h2>
       </div>
       <div id="product-features">
-        <div id="sub-title-container">
-          <p id="sub-title">Join 60,000+ product managers receiving monthly updates on:</p>
-        </div>
-        <div id="feature-list">
-          <ul>
-            <li>
+        <p id="product-features-desc">
+          Join 60,00+ product managers receiving monthly updates on:
+        </p>
+        <div id="product-features-list-container">
+          <ul id="product-features-list">
+            <li class="product-features-list-item">
               <div class="list-tick">
-                <img id="list-tick-img" src="./assets/images/icon-list.svg" alt="list-tick">
+                <img class="list-tick-img" src="./assets/images/icon-list.svg" alt="list-tick">
               </div>
-              <div class="list-text">
-                <p>
+              <div class="list-text-container">
+                <p class="list-text">
                   Product discovery and building what matters
                 </p>
               </div>
             </li>
-            <li>
+            <li class="product-features-list-item">
               <div class="list-tick">
-                <img id="list-tick-img" src="./assets/images/icon-list.svg" alt="list-tick">
+                <img class="list-tick-img" src="./assets/images/icon-list.svg" alt="list-tick">
               </div>
-              <div class="list-text">
-                <p>
+              <div class="list-text-container">
+                <p class="list-text">
                   Measuring to ensure updates are a success
                 </p>
               </div>
             </li>
-            <li>
+            <li class="product-features-list-item">
               <div class="list-tick">
-                <img id="list-tick-img" src="./assets/images/icon-list.svg" alt="list-tick">
+                <img class="list-tick-img" src="./assets/images/icon-list.svg" alt="list-tick">
               </div>
-              <div class="list-text">
-                <p>
+              <div class="list-text-container">
+                <p class="list-text">
                   And much more!
                 </p>
               </div>
@@ -58,10 +60,11 @@
         </div>
       </div>
       <div id="email-form-container">
-        <form id="email-form">
+        <form id="email-form" onsubmit="subscribe(event)">
           <label id="email-form-label" for="email-address">Email address</label>
           <div id="email-text-container">
-            <input type="text" id="email-address" name="email-address" value="email@company.com">
+            <input type="text" id="email-address" name="email-address" placeholder="email@company.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
           </div>
           <input id="subscribe-btn" type="submit" value="Subscribe to monthly newsletter">
         </form>
@@ -72,5 +75,26 @@
       <img id="mobile-img" src="./assets/images/illustration-sign-up-mobile.svg" alt="newsletter">
     </div>
   </div>
+  <div id="main-container-success">
+    <div id="text-container-success">
+      <div id="ctn-success-tick">
+        <img id="img-success-tick" src="./assets/images/icon-success.svg" alt="success-tick">
+      </div>
+      <div id="title-success-container">
+        <h2 id="title-success">Thanks for subscribing!</h2>
+      </div>
+      <div id="text-success-container">
+        <p>
+          A confirmation email has been sent to <span id="email-target"></span>. Please open it and click the button inside to confirm your subscription.
+        </p>
+      </div>
+      <div id="btn-dismiss-container">
+        <button id="btn-dismiss" onclick="dismiss()">
+          Dismiss message
+        </button>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
